@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino ASC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="/img/asc1.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer">
+            <div id="time">00:00:00</div>
+            <div class="timer-buttons">
+                <button onclick="startTimer()">Iniciar</button>
+                <button onclick="pauseTimer()">Pausar</button>
+                <button onclick="resetTimer()">Zerar</button>
+            </div>
+        </div>
+
+        <main class="content">
+            <h1>TREINO DO DIA</h1>
+            <div class="center">
+                <form>
+                    <div>
+                        <label for="option">Escolha o dia de treino:</label>
+                        <select id="option">
+                            <option selected disabled>Dia de treino</option>
+                            <option value="1">Segunda-Feira</option>
+                            <option value="2">Terça-Feira</option>
+                            <option value="3">Quarta-Feira</option>
+                            <option value="4">Quinta-Feira</option>
+                            <option value="5">Sexta-Feira</option>
+                        </select>
+                    </div>
+                    <div class="centro-btn">
+                        <button type="button" onclick="treinoAsc()">TREINAR</button>
+                    </div>
+                    <div>
+                        <p id="result"></p>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
